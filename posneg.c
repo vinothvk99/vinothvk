@@ -20,4 +20,5 @@ void main()
    printf("Negative");
   }
  }
+ getch();
 }
