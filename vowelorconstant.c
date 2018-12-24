@@ -11,7 +11,7 @@ void main()
  }
  else
  {
-  printf("Constant");
+  printf("Consonant");
  }
 getch();
 }
