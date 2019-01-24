@@ -2,11 +2,11 @@
 #include<conio.h>
 void main()
 {
-int fact=1,number,i;
+int fa=1,num,i;
 clrscr();
-scanf("%d",&number);
-for(i=number;i>0;i--)
- fact*=i;
-printf("%d",fact);
+scanf("%d",&num);
+for(i=num;i>0;i--)
+ fa*=i;
+printf("%d",fa);
 getch();
 }
