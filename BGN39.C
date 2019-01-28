@@ -9,7 +9,19 @@ void main()
   cou=num/60;
   printf("%d ",cou);
   cou=num%60;
-  printf("%d",cou);
+  if(cou!=0)
+  {
+   printf("%d",cou);
+  }
+  else
+  {
+    printf("00");
+  }
+ }
+ else
+ {
+   printf("0");
+   printf("%d",num);
  }
  getch();
 }
