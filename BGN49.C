@@ -1,0 +1,49 @@
+#include<stdio.h>
+void main()
+{
+ int num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,temp;
+ scanf("%d %d %d %d %d %d %d %d %d %d",&num1,&num2,&num3,&num4,&num5,&num6,&num7,&num8,&num9,&num10);
+ max=num1;
+ if(num1>num2)
+ {
+  max=num1;
+ }
+ else
+ {
+  max=num2;
+  if(max>num3)
+  {
+   max=num3;
+  }
+  else
+  {
+   if(max>num4)
+   {
+    max=num4;
+   }
+   else
+   {
+    if(max>num5)
+   {
+    max=num5;
+   }
+   else
+   {
+    if(max>num6)
+    {
+     max=num6;
+    }
+    else
+    {
+     if(max>num6)
+     {
+      max=num4;
+     }
+    }
+   }
+   }
+  }
+ }
+ printf("%d %d",num1,num2);
+ getch();
+}
