@@ -1,49 +1,20 @@
-#include<stdio.h>
-void main()
+#include <stdio.h>
+
+int main()
 {
- int num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,temp;
- scanf("%d %d %d %d %d %d %d %d %d %d",&num1,&num2,&num3,&num4,&num5,&num6,&num7,&num8,&num9,&num10);
- max=num1;
- if(num1>num2)
- {
-  max=num1;
- }
- else
- {
-  max=num2;
-  if(max>num3)
-  {
-   max=num3;
-  }
-  else
-  {
-   if(max>num4)
-   {
-    max=num4;
-   }
-   else
-   {
-    if(max>num5)
-   {
-    max=num5;
-   }
-   else
-   {
-    if(max>num6)
+    int a[20],i,m=0;
+    for(i=0;i<10;i++)
     {
-     max=num6;
+        scanf("%d",&a[i]);
     }
-    else
+    
+    for(i=0;i<10;i++)
     {
-     if(max>num6)
-     {
-      max=num4;
-     }
+        if(a[i]>m)
+        {
+            m=a[i];
+        }
     }
-   }
-   }
-  }
- }
- printf("%d %d",num1,num2);
- getch();
+    printf("%d",m);
+    return 0;
 }

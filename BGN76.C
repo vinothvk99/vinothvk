@@ -1,11 +1,24 @@
-#include<stdio.h>
-void main()
+#include <stdio.h>
+
+int main()
 {
- int num1,rem;
- scanf("%d",&num1);
- rem=num1%10;
- rem=10-rem;
- num1=num1+rem;
- printf("%d",num1);
- getch();
+    int N,i,f=0;
+    scanf("%d",&N);
+    for(i=1;i<N/2;i++)
+    {
+        if(N%i==0)
+        {
+            f=1;
+            break;
+        }
+    }
+    if(f==0)
+    {
+        printf("yes");
+    }
+    else
+    {
+        printf("no");
+    }
+return 0;
 }
