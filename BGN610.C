@@ -3,12 +3,12 @@
 
 int main()
 {
-    int K,sum=0,i;
+    int K,sum1=0,i;
     scanf("%d",&K);
     for(i=1;i<=K;i++)
     {
-        sum+=i;
+        sum1+=i;
     }
-    printf("%d",sum);
+    printf("%d",sum1);
     return 0;
 }
