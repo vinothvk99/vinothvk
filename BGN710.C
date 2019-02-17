@@ -2,9 +2,9 @@
 
 int main()
 {
-    int N,p;
-	scanf("%d",&N);
-p=N*2;
+    int NUM,p;
+	scanf("%d",&NUM);
+p=NNUM*2;
 
 	printf("%d",p);
 	
