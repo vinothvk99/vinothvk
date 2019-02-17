@@ -1,26 +1,26 @@
 #include <stdio.h>
 int main() 
 {
-    int NUM,a[1000],i,j,t;
+    int NUM,a1[1000],i,j,t;
     scanf("%d",&NUM);
     for(i=0;i<NUM;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&a1[i]);
     }
     
     for(i=0;i<NUM;i++)
     {
         for(j=i;j<NUM;j++)
         {
-        if(a[i]>a[j])
+        if(a1[i]>a1[j])
     {
-        t=a[i];
-        a[i]=a[j];
-        a[j]=t;
+        t=a1[i];
+        a1[i]=a1[j];
+        a1[j]=t;
     }}}
     for(i=0;i<NUM;i++)
     {
-        printf("%d ",a[i]);
+        printf("%d ",a1[i]);
     }
 return 0;
 }
