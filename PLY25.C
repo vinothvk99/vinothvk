@@ -1,8 +1,9 @@
+   
 #include <stdio.h>
 
 int main()
 {
-  int NUM,i,len,k=0,z[10],m,j,t;
+  int NUM,i,len,q=0,arr[10],min,j,temp;
   char a[10][10];
   scanf("%d",&NUM);
   for(i=0;i<NUM;i++)
@@ -12,18 +13,18 @@ int main()
    for(i=0;i<NUM;i++)
   {   
 len=strlen(a[i]);   
- z[k]=len;
-      k++;
+ arr[q]=len;
+      q++;
   }
    for(i=0;i<NUM;i++)
   {
   for(j=i+1;j<NUM;j++)
    {
-       if(z[i]>z[j])
+       if(arr[i]>arr[j])
        {
-           t=z[i];
-           z[i]=z[j];
-           z[j]=t;   
+           temp=arr[i];
+           arr[i]=arr[j];
+           arr[j]=temp;   
        }    
    }
   }
@@ -32,7 +33,7 @@ len=strlen(a[i]);
       for(j=0;j<NUM;j++)
       {
           
-          if(z[i]==strlen(a[j]))
+          if(arr[i]==strlen(a[j]))
           printf("%s\n",a[j]);
       }
   }
