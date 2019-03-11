@@ -2,23 +2,28 @@
 
 int main()
 {
-int Num,arr[100000],i,K;
-   scanf("%d %d",&Num,&K);
-   for(i=0;i<Num;i++)
-   {
-       scanf("%d",&arr[i]);
-   }
-   
-      for(i=0;i<Num;i++)
-   {
-    if(arr[i]==K)
+int NUM,Arr[500],Brr[500],i,j,cunt=0;
+scanf("%d",&NUM);
+for(i=0;i<NUM;i++)
+{
+    scanf("%d",&Arr[i]);
+}
+
+for(i=0;i<NUM;i++)
+{
+    scanf("%d",&Brr[i]);
+}
+ for(i=0;i<NUM;i++)
+ {
+     for(j=0;j<NUM;j++)
+ { 
+    if(Arr[i]==Brr[j])
      {
-         printf("%d ",i+1);
-         break;
-         
-     }
-       
-     
-   }
-    return 0;
+     break;   
+     }   
+ }
+ if(cunt!=1)
+ { printf("%d ",Arr[i]); }
+ }
+ return 0; 
 }

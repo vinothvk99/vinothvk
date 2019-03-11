@@ -2,28 +2,16 @@
 
 int main()
 {
-int Num,M,arr[100000],i,j,t1,t2;
-   scanf("%d",&Num);
- for(i=0;i<Num;i++)
-   {
-       scanf("%d",&arr[i]);
-   }
-   for(i=0;i<Num;i++)
+    	int NUM,temp,i,j,flag=0;
+	scanf("%d %d",&NUM,&temp);
+	int arr[NUM];
+	for(i=0;i<NUM;i++)
 	{
-	for(j=0;j<Num;j++)
+		scanf("%d",&arr[i]);
+	}
+	for(i=0;i<NUM-temp;i++)
 	{
-       t1=arr[j]-arr[i];
-		t2=arr[i]-arr[j];
-		if(t1>M)
-		{
-			M=t1;
-		}
-		if(t2>M)
-		{
-			M=t2;
-		}
+			printf("%d ",arr[i]);
 	}
-	}
-	printf("%d",M);
     return 0;
 }
