@@ -31,11 +31,6 @@ int main()
             temp=a[i];
             a[i]=a[j];
             a[j]=temp;
-            for(k=0;k<n;k++)
-          {
-           printf("%d ",a[k]);
-          }
-          printf("\n");
         }
     }
      temp=a[l];
