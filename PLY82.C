@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include<math.h>
 
 int main()
 {
-   int NUM,arr[100],i,j,count=0;
+   int NUM,arr[100],i,b;
    scanf("%d",&NUM);
    for(i=0;i<NUM;i++)
    {
@@ -12,14 +11,9 @@ int main()
    
       for(i=0;i<NUM;i++)
    {
-       
-      for(j=i+1;j<NUM;j++)
-   {
-      if(arr[i]<arr[j])
-      count++;   
+     if(arr[i]>arr[i+1])
+        b=arr[i];   
    }
-   
-   }
-   printf("%d",count);
+    printf("%d ",b);
     return 0;
 }

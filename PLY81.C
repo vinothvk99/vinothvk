@@ -2,24 +2,23 @@
 
 int main()
 {
-int Num,i,j,max,temp;
-    scanf("%d",&Num);
-    int arr[Num];
-    for(i=0;i<Num;i++)
-    {
-        scanf("%d",&arr[i]);
-    }
-    for(i=0;i<=Num;i++)
-	{
-		for(j=i+1;j<=Num;j++)
-		{
-			temp=((arr[i])&(arr[j]));
-			if(temp>max)
-			{
-				max=temp;
-			}
-		}
-	}
-	printf("%d",max);
+   int NUM,array[100],i;
+   scanf("%d",&NUM);
+   for(i=0;i<NUM;i++)
+   {
+       scanf("%d",&array[i]);
+   }
+   
+      for(i=0;i<NUM-1;i++)
+   {
+     if(array[i]<array[i+1])
+     {
+      printf("%d ",array[i+1]);
+      }
+       else
+       {
+        printf("%d ",array[i]);
+      }
+   }
     return 0;
 }
