@@ -1,5 +1,3 @@
-#include<stdio.h> 
-int main()
 {
     int a[50],len[50],lp[50],fp[50],num,i,j,count=0,k=0,lpo,fpo;
     scanf("%d",&num);
@@ -24,20 +22,22 @@ int main()
                 {
                     break;
                 }
+                i=j;
             }
-            if(count<1)
+            if(count>1)
             {
                 len[k]=count;
                 fp[k]=fpo;
                 lp[k]=lpo;
                 k++;
+                printf("yes %d ",count);
             }
              count=0;
         }
     }
     for(i=0;i<k;i++)
     {
-        printf("%d %d %d\n",fp[i],lp[i],len[i]);
+        printf("\n%d %d %d\n",fp[i],lp[i],len[i]);
     }
     return 0;
 }
