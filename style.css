@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(230deg , #ff0066 ,#1665c1);
+}
+.card 
+{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    background-color: #0009;
+    border-radius: 2%;
+    height: 68%;
+    width: 21%;
+    align-items: center;
+    padding: 7px;
+    opacity: 0.5%;
+}
+.card1{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+    font-size: 55pt;
+    border-left:#fff solid 2px;
+    border-radius: 10px;
+    padding: 7px;
+    text-align: center;
+}
+.tex
+{
+    width: 205pt;
+    height: 70pt;
+    margin: 0pt 2pt 0pt 0pt;
+    text-align: right;
+    padding: 6pt;
+    padding-top: 16pt;
+    background-color:#0006;
+    color: #fff;
+    font-size: 30pt;
+    border: #0006 solid 1px;
+    border-radius: 5%;
+}
+.button{
+    width: 50pt;
+    height: 50pt;
+    font-size: 26px;
+    color:#fff;
+    cursor: pointer;
+    border: #0009 solid 1px;    
+}
+.col
+{
+    background-color: orange;
+}
+.co
+{
+    background-color: #666666;
+}
+.co1
+{
+    background-color: #404040;
+}
+.dot1{
+    position: absolute;
+    background-color: red;
+    border-radius: 60%;
+    color:lime;
+    font-size: 10pt;
+    width: 15pt;
+    left :5%;
+    top: 3%;
+    }
+.dot2{
+    position: absolute;
+    background-color:yellow;
+    border-radius: 60%;
+    color:lime;
+    font-size: 10pt;
+    width: 15pt;
+    left : 13%;
+    top: 3%;
+    }
+.dot3{
+    position: absolute;
+    background-color: lime;
+    border-radius: 60%;
+    color:lime;
+    font-size: 10pt;
+    width: 15pt;
+    left :21%;
+    top: 3%;
+    }

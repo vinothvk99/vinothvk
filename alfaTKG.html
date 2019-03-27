@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            var equt=0,equt1,equt2,equt3=0;
+         function calc(num){
+             if(equt2!=0)
+                 {
+                   document.form.tex.value="";
+                   equt2=0;
+                 }
+             document.form.tex.value=document.form.tex.value+num;
+         }
+            function answer(){
+                var equation = equt+document.form.tex.value;
+                if(equation){
+                document.form.tex.value=eval(equation);
+                    equt=0;
+                    equt3=0;
+                }
+            }
+            function signs(num){
+                equt1= document.form.tex.value;
+                equt = equt+document.form.tex.value;
+                equt3= eval(equt);
+                equt = equt3+num;
+                document.form.tex.value="";
+                equt2= equt;
+                document.form.tex.value=equt1;
+                
+            }
+            function clean(){
+                document.form.tex.value="";
+                equt = 0;
+                equt3= 0;
+            }
+            function change(){
+                var exp=document.form.tex.value;
+                if(exp>0){
+                    document.form.tex.value='-'+exp;
+                }
+                else{
+                    document.form.tex.value=exp*-1;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <br>
+        <div class="card"><script>
+            
+            </script>
+           <div class="dot1">.</div>
+           <div class="dot2">.</div>
+           <div class="dot3">.</div>
+               <form name="form" style="padding-bottom: 2pt; ">
+                  <input class="tex" name="tex">
+               </form>
+            <table name="table">
+            <tr>
+                 <td><input type="button" class="button co1"  value="C" onclick="clean()" name="check"></td>
+                 <td><input type="button" class="button co1"  value="+/-" onclick="change()"></td>
+                 <td><input type="button" class="button co1"  value="%" onclick="calc('%')"></td>
+                 <td><input type="button" class="button col" value="&#247;" onclick="signs('/')"></td>
+            </tr>
+                <tr>
+                 <td><input type="button" class="button co"  value="7" onclick="calc(7)"></td>
+                 <td><input type="button" class="button co"  value="8" onclick="calc(8)"></td>
+                 <td><input type="button" class="button co"  value="9" onclick="calc(9)"></td>
+                 <td><input type="button" class="button col" value="x" onclick="signs('*')"></td>
+            </tr>
+                <tr>
+                 <td><input type="button" class="button co"  value="4" onclick="calc(4)"></td>
+                 <td><input type="button" class="button co"  value="5" onclick="calc(5)"></td>
+                 <td><input type="button" class="button co"  value="6" onclick="calc(6)"></td>
+                 <td><input type="button" class="button col" value="-" onclick="signs('-')"></td>
+            </tr>
+                <tr>
+                 <td><input type="button" class="button co"  value="1" onclick="calc(1)"></td>
+                 <td><input type="button" class="button co"  value="2" onclick="calc(2)"></td>
+                 <td><input type="button" class="button co"  value="3" onclick="calc(3)"></td>
+                 <td><input type="button" class="button col" value="+" onclick="signs('+')"></td>
+            </tr>
+                <tr>
+                 <td colspan="2"><input type="button" class="button co" style="width: 103pt;text-align: left;padding: 18px;"  value="0" onclick="calc(0)"></td>
+                 <td><input type="button" class="button co"  value="." onclick="calc('.')"></td>
+                 <td><input type="button" class="button col" value="=" onclick="answer()"></td>
+            </tr>
+           </table>    
+        </div>
+        <div class="card1">
+        <p>AlfaTGK<br>CALCULATOR</p>
+        </div>
+    </body>
+</html>
